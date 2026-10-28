@@ -4,7 +4,7 @@ export const PERFIL = {
   titular: "Estudiante de DAW · Desarrollo web accesible",
   usuarioGithub: "FranGuerreroH",
   email: "3728291@alu.murcieduca.es",
-  minimoProyectos: 3,
+  minimoProyectos: 4,
   minimoHabilidades: 6,
   secciones: ["sobre-mi", "formacion", "habilidades", "contacto"],
   paleta: {
@@ -12,7 +12,7 @@ export const PERFIL = {
     "--color-secundario": "#3A7D6C",
     "--color-fondo": "#115455",
     "--color-texto": "#E0F2EC",
-    "--color-acento": "#F4A261"
+    "--color-acento": "#A8BED1"
   },
   fuenteTitulos: "Times New Roman",
   fuenteTexto: "Arial",

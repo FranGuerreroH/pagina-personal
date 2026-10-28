@@ -86,11 +86,15 @@ test("index.html incluye título, secciones, habilidades y contacto del perfil",
   assert.ok(contacto.includes(`https://github.com/${PERFIL.usuarioGithub}`), "#contacto debe incluir el perfil de GitHub.");
 });
 
-test("proyectos.html presenta proyectos completos y enlaces externos seguros", () => {
+test("proyectos.html presenta proyectos completos, incluye la página personal y enlaces externos seguros", () => {
   const html = leerArchivoSite("proyectos.html");
   const articulos = [...html.matchAll(/<article\b[^>]*class="[^"]*\bproyecto\b[^"]*"[^>]*>([\s\S]*?)<\/article>/gi)];
 
   assert.ok(articulos.length >= PERFIL.minimoProyectos, `Se necesitan al menos ${PERFIL.minimoProyectos} artículos de proyecto.`);
+  assert.ok(
+    html.includes("https://github.com/FranGuerreroH/pagina-personal"),
+    "Falta el proyecto de la página personal en la lista final de proyectos."
+  );
 
   for (const [, contenido] of articulos) {
     assert.ok(/<h[23]\b/i.test(contenido), "Cada proyecto necesita un h2 o h3.");
