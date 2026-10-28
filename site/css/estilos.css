@@ -1,0 +1,249 @@
+:root {
+  --color-primario: #9CC9B6;
+  --color-secundario: #3A7D6C;
+  --color-fondo: #115455;
+  --color-texto: #E0F2EC;
+  --color-acento: #F4A261;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primario);
+  text-underline-offset: 0.2em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-acento);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 3px;
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: minmax(112px, 1fr) minmax(260px, 2fr) minmax(220px, 1.5fr);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem clamp(1rem, 5vw, 4rem);
+  background-color: var(--color-secundario);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 22%);
+}
+
+.marca {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-texto);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.marca img {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
+}
+
+.marca__nombre {
+  display: block;
+}
+
+.presentacion {
+  text-align: center;
+}
+
+.presentacion h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.presentacion__titular {
+  display: block;
+  margin-top: 0.45rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.navegacion ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacion a {
+  color: var(--color-texto);
+  font-weight: 700;
+}
+
+.navegacion a[aria-current="page"] {
+  text-decoration-thickness: 3px;
+}
+
+main {
+  width: min(100% - 2rem, 1100px);
+  margin: 2rem auto;
+}
+
+.seccion {
+  margin-block: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-primario);
+  border-radius: 5px;
+  background-color: var(--color-secundario);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 22%);
+}
+
+.seccion h2 {
+  margin-top: 0;
+  color: var(--color-primario);
+}
+
+.lista-formacion,
+.lista-habilidades {
+  padding-left: 1.4rem;
+}
+
+.lista-formacion li,
+.lista-habilidades li {
+  margin-block: 0.45rem;
+}
+
+.rejilla-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.proyecto {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: 1px solid var(--color-primario);
+  border-radius: 5px;
+  background-color: var(--color-fondo);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 22%);
+}
+
+.proyecto h2 {
+  margin: 0 0 0.5rem;
+  color: var(--color-primario);
+  overflow-wrap: anywhere;
+}
+
+.proyecto p {
+  margin-block: 0.5rem;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tecnologias li {
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  background-color: var(--color-secundario);
+}
+
+.boton,
+.boton-enlace {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--color-secundario);
+  box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+  color: var(--color-texto);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover,
+.boton-enlace:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem clamp(1rem, 5vw, 4rem);
+  background-color: var(--color-secundario);
+}
+
+.pie p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cabecera {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .navegacion ul {
+    justify-content: center;
+  }
+
+  .rejilla-proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .proyecto {
+    width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}

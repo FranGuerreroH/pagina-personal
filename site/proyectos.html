@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selección de proyectos de Francisco relacionados con aplicaciones web, JavaScript, HTML y herramientas de desarrollo.">
+    <title>Proyectos · Francisco</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecera">
+      <a class="marca" href="index.html" aria-label="Página personal de Francisco">
+        <img src="img/avatar.svg" alt="Ilustración de un avatar con fondo verde" width="112" height="112">
+        <span class="marca__nombre">Francisco</span>
+      </a>
+      <div class="presentacion">
+        <h1><span>Francisco</span><span class="presentacion__titular">Estudiante de DAW · Desarrollo web accesible</span></h1>
+      </div>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+          <li><a href="index.html#formacion">Formación</a></li>
+          <li><a href="index.html#habilidades">Habilidades</a></li>
+          <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccion seccion-proyectos" aria-labelledby="titulo-proyectos">
+        <h2 id="titulo-proyectos">Proyectos</h2>
+        <div class="rejilla-proyectos">
+          <article class="proyecto">
+            <h2>php-words</h2>
+            <p>Aplicación que muestra comandos PHP.</p>
+            <ul class="tecnologias">
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>HTML</li>
+            </ul>
+            <a class="boton-enlace" href="https://github.com/FranGuerreroH/php-words" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
+          </article>
+
+          <article class="proyecto">
+            <h2>practicaci-cd</h2>
+            <p>Aplicación simple que muestra animales y sonidos.</p>
+            <ul class="tecnologias">
+              <li>JavaScript</li>
+              <li>Docker</li>
+            </ul>
+            <a class="boton-enlace" href="https://github.com/FranGuerreroH/practica_cicd" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
+          </article>
+
+          <article class="proyecto">
+            <h2>SDAW_8291</h2>
+            <p>Repositorio de práctica de comandos git.</p>
+            <ul class="tecnologias">
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+            <a class="boton-enlace" href="https://github.com/FranGuerreroH/SDAW_8291" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>© <span data-year></span> Francisco</p>
+      <button class="boton" type="button" data-back-to-top>Volver arriba</button>
+    </footer>
+  </body>
+</html>

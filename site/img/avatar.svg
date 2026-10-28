@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img" aria-labelledby="titulo">
+  <title id="titulo">Avatar de Francisco</title>
+  <circle cx="56" cy="56" r="56" fill="#115455"/>
+  <circle cx="56" cy="42" r="21" fill="#9CC9B6"/>
+  <path d="M17 108c3-23 18-36 39-36s36 13 39 36" fill="#3A7D6C"/>
+  <path d="M37 40c2-13 9-20 20-20s18 7 20 20c-5-5-12-8-20-8s-15 3-20 8" fill="#F4A261"/>
+</svg>
