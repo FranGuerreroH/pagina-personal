@@ -2,7 +2,7 @@
 
 Página personal estática con perfil, formación, habilidades y proyectos.
 
-https://FranGuerreroH.github.io/pagina-personal/
+https://FranGuerreroH.github.io/pagina-personal/site
 
 ## Cómo ejecutar
 
